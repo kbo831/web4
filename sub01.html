@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>시드물리뉴얼 포트폴리오</title>
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="애플 이미지 미정" />
+    <link rel="apple-touch-icon-precomposed" href="애플이미지미정" />
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+
+    <meta name="title" content="시드물리뉴얼 포트폴리오">
+    <meta name="keywords" content="시드물, 자연뷰티, 천연성분화장품, 천연식물성분, 천연보존시스템, 동물실험반대, 아름다운가게, 자연사랑, 자연보호 ">
+    <meta name="description" content="자연은 사람보호, 사람은 자연보호, 천연성분을 사용하는 자연뷰티 브랜드 시드물 홈페이지입니다.">
+    <meta http-equiv="refresh" content="180">
+    <meta property="og:title" content="자연뷰티브랜드 시드물">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="자연은 사람보호, 사람은 자연보호, 천연성분을 사용하는 자연뷰티 브랜드 시드물 홈페이지입니다.">
+    <!--오픈 그래프 이지미 넣기-->
+    <meta property="og:image" content="jpg">
+    <meta property="og:url" content="www.sidmool.com">
+    <meta property="og:site_name" content="자연뷰티화장품 시드물">
+
+
+    <title>시드물리뉴얼포트폴리오홈페이지</title>
+    <!--폰트 .css-->
+
+    <link rel="stylesheet" href="css/clear.css">
+    <!--공통, 메인 css링크-->
+    <link rel="stylesheet" href="./sub_common.css">
+    <!--ㅈㅔ이쿼리 js 넣기-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!--모바일에서 데탑전환 또는 반대 스크립트-->
+    <script src="js/device.js"></script>
+    <script>
+        /*   $(document).ready(function() {
+            deviceCheck1();
+        });*/
+    </script>
+    <style>
+        .page { width: 100vw; margin: 0 auto; clear:both; position: relative; min-height: 600px;}
+        .page:after { content:""; display: block; height:1px; clear: both;}
+        #page01{ position:relative;}
+        .fr_box { position: absolute; width:100%; padding: 100px 0; display: none;}
+        .txt_box { width:50%; height: 400px; font-size: 50px; text-align: center; float:left; }
+        .u_box { width: 700px; height:400px; float: right; padding-right: 150px; }
+        .u_box iframe { width: 100%; height: 400px; }
+        #page01 .box02 {display:none;}
+        #page01 .box03 {display:none;}
+
+        /*box01*/
+        #page01 { width:90%; margin-bottom: 50px; position:relative;}
+        #page01 p {font-weight: 700;}
+        #page01 .box01 .tit01 { font-size: 30px; }
+        #page01 .box01 .tit02 { font-size: 45px; color: green}
+        #page01 .box01 .tit03 { font-size: 45px;}
+        #page01 .box01 a { display: block; width: 120px; height:80px; font-size: 30px; line-height:80px; position: absolute; left:21%; bottom: 27%; border: 1px solid transparent; border-radius: 40px; color:#fff; font-weight: 700;background-color: green; }
+        #page01 .box01 a:hover { border: 2px solid green; background-color: white; color: green; }
+
+        /*button*/
+        #page01 .fr_box label { display: block; width: 100px; height: 100px; position: absolute; top:40%; text-indent: -9999px; }
+        /*호버시 각도도절 효과 넣기:transition 과 trasform: rotate("xxdge"); position: absolute 가 있어야 조절 가능 */
+        #page01 .fr_box label.prev { left:0; background-image: url("main/leaf_left_btn.png"); }
+
+        #page01 .fr_box label.next { right:0; background-image: url("main/leaf_right_btn.png"); }
+
+        #page01 .radio { display: none;}
+
+        /*box2*/
+        #page01 p {font-weight: 700;}
+        #page01 .box02 .tit01 { font-size: 30px; }
+        #page01 .box02 .tit02 { font-size: 45px; color: #633702; }
+        #page01 .box02 .tit03 { font-size: 45px;}
+        #page01 .box02 a { display: block; width: 120px; height:80px; font-size: 30px; line-height:80px; position: absolute; left:21%; bottom: 27%; border: 1px solid transparent; border-radius: 40px; color:#fff; font-weight: 700;background-color: #633702; }
+        #page01 .box02 a:hover { border: 2px solid #633702; background-color: white; color: #633702; }
+
+        /*box3*/
+        #page01 p {font-weight: 700;}
+        #page01 .box03 .tit01 { font-size: 30px; }
+        #page01 .box03 .tit02 { font-size: 45px; color: #ffcc00; }
+        #page01 .box03 .tit03 { font-size: 45px;}
+        #page01 .box03 a { display: block; width: 120px; height:80px; font-size: 30px; line-height:80px; position: absolute; left:21%; bottom: 27%; border: 1px solid transparent; border-radius: 40px; color:#fff; font-weight: 700;background-color: #ffcc00; }
+        #page01 .box03 a:hover { border: 2px solid #ffcc00; background-color: white; color: #ffcc00; }
+
+
+        /*radio button*/
+        #ra1:checked ~ .fr_box.box01 {display: block;}
+        #ra2:checked ~ .fr_box.box02 {display: block;}
+        #ra3:checked ~ .fr_box.box03 {display: block;}
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd_wrap">
+            <nav class="tnb">
+                <ul>
+                    <li>
+                        <a href="">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="">로그인</a>
+                    </li>
+                    <li>
+                        <a href="">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="">장바구니<span class="buy_num">(0)</span>
+                        </a>
+                    </li>
+                    <li><a href="">배송조회</a></li>
+                </ul>
+            </nav>
+            <div class="gnb_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./main/seedmol_tnb_logo(230_70).png" alt="시드물_로고">
+                </a>
+                <nav class="gnb">
+                    <ul class="gnb_lst">
+                        <li>
+                            <a href="sub01.html">홍보영상</a>
+                        </li>
+                        <li>
+                            <a href="sub02.html">제품구매</a>
+                        </li>
+                        <li>
+                            <a href="sub03.html">브랜드 PHILOSOPHY</a>
+                        </li>
+                        <li>
+                            <a href="sub04.html">브랜드 스토리</a>
+                        </li>
+                        <li>
+                            <a href="sub05.html">시드물 통신</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="index.html" class="logo_ico">
+                    <img src="./main/tnb_end_img.png" alt="시드물_아이콘">
+                </a>
+            </div>
+        </header>
+        <main class="con">
+            <!--page01-->
+            <div class="page" id="page01">
+                <input type="radio" name="radio" class="radio" id="ra1" checked>
+                <input type="radio" name="radio" class="radio" id="ra2">
+                <input type="radio" name="radio" class="radio" id="ra3">
+
+                <div class="fr_box box01">
+                    <label for="ra3" class="prev">이전</label>
+
+                    <div class="txt_box ">
+                        <h4>vedio01</h4>
+                        <p>
+                            <span class="tit01">내게 필요한</span><br>
+                            <span class="tit02">SIDMOOL</span><span class="tit03">&nbsp;ITEM</span>
+                        </p>
+                        <a href="https://youtu.be/v9Os2tjpmEo" class="more" target="_blank" title="시드물 제품소개">MORE</a>
+                    </div>
+
+                    <div class="u_box">
+                        <iframe src="https://www.youtube.com/embed/6fyUOyn8fRE?list=PLe5kg__t0TVlX9rIA3pYUaJuU0JJCfZs2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <label for="ra2" class="next">다음</label>
+                </div>
+                <div class="fr_box box02">
+                    <label for="ra1" class="prev">이전</label>
+                    <div class="txt_box">
+                        <h4>vedio02</h4>
+                        <p>
+                            <span class="tit01">시드물 성분사전</span><br>
+                            <span class="tit02">피부를 위한 성분체크</span>
+                        </p>
+                        <a href="https://youtu.be/6fyUOyn8fRE" class="more" target="_blank" title="시드물 성분사전">MORE</a>
+                    </div>
+                    <div class="u_box">
+                        <iframe src="https://www.youtube.com/embed/v9Os2tjpmEo?list=PLe5kg__t0TVm8vTfm2TgXHz86HdmsjrDN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>시드물상품영상</iframe>
+                    </div>
+                    <label for="ra3" class="next">다음</label>
+                </div>
+                <div class="fr_box box03">
+                    <label for="ra2" class="prev">이전</label>
+
+                    <div class="txt_box">
+                        <h4>vedio03</h4>
+                        <p>
+                            <span class="tit01">시드물 직원화장대</span><br>
+                            <span class="tit02">SIDMOOL은 이렇게~</span>
+                        </p>
+                        <a href="https://youtu.be/1ExPmOJQj98" class="more" target="_blank" title="시드물 화장품사용법">MORE</a>
+                    </div>
+                    <div class="u_box">
+                        <iframe src="https://www.youtube.com/embed/1ExPmOJQj98?list=PLe5kg__t0TVmGzRzq96A1fduHUXoWQ1qy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <label for="ra1" class="next">다음</label>
+                </div>
+
+            </div>
+
+
+        </main>
+        
+        <footer class="ft ">
+            <div class="ft_wrap">
+                <div class="text_wrap">
+                    <ul class="text_box01 text_box">
+                        <li>
+                            <a href="">회사소개</a>
+                        </li>
+                        <li>
+                            <a href="">이용안내</a>
+                        </li>
+                        <li>
+                            <a href="">개인정보처리방침
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                    </ul>
+                    <div class="text_box02 ">
+                        <p>회사명: 주식회사 시드물</p>
+                        <p>본사:대전광역시 중구 안영로 42(안영동) 우편번호)35083</p>
+                        <p>대표: 민중기 사업자등록번호:305-81-94469</p>
+                        <p>화장품 제조판매업 등록필증 제 1163호</p>
+                        <p class="copyright">
+                        COPYRIGHT(C) 2008<span>SIDMOOL</span>ALL RIGHTS RESERVED.
+                        <span>Hosting by Makeshop</span>
+                    </p>
+                    </div>
+                </div>
+                <div class="tell_box">
+                    <p><span class="01">상담문의</span></p>
+                    <p ><span>Tell: 1577-9638</span></p>
+                    <p>해외: +82-42-716-0227</p>
+                    <p>팩스:042-367-7989</p>
+
+                </div>
+                <div class="ft_logo text_box">
+                    <img src="./main/seedmol_tnb_end_logo.png" alt="tnb_로고">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

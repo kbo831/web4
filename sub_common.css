@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*공통부분 */
+* { margin: 0; padding: 0; }
+body,html { width: 100%; overflow-x:hidden; font-family: "nsL","nsL","nsEB","san-serif","serif";}
+ul { list-style: none; }
+a { text-decoration: none; }
+input,button,img { outline: 0; border: 0; background: none; }
+
+.hd_wrap,.tnb,.gnb_wrap,.con,.ft{ clear:both; }
+.hd_wrap { width:100%; position:fixed; z-index: 9999; background-color: #fff; }
+.clrfx:after { content:""; display:block; clear: both; }
+
+/*tnb*/
+.tnb { width: 1440px; margin:0 auto;}
+.tnb ul { float: right;}
+.tnb ul li { float: left; height:40px;  }
+.tnb ul li a { color: black; display: block; padding:10px; height:40px; line-height: 40px; font-weight: 700;}
+.tnb ul li a:hover { color: green;}
+
+/*gnb*/
+.gnb_wrap { width: 1440px; margin: 0 auto; position: relative;}
+.gnb_wrap a.logo { display: block; width: 200px; height: 60px; }
+.gnb  { width:1000px; height: 60px;  margin:0 auto; margin-top: -45px; }
+.gnb_lst { width:100%; height: auto; margin-left: 20px; }
+.gnb_lst li { float: left; height: 60px; padding:0 10px; position: relative; }
+.gnb_lst:first-child {padding-left: 100px;}
+.gnb_lst li a { float: left; color: black; font-size: 20px; font-weight: 700; line-height: 60px; display:block; text-align: center; padding:0 30px; }
+
+.gnb_lst li a:after { content:""; display: block; width:20px; height:20px; background-image:url(main/gnb_a_bg.png); text-align: center; background-repeat: no-repeat; background-position: center left; position: absolute; top:20px; right:10px; display: none; }
+
+.gnb_lst li:hover a {color: green;}
+.gnb_lst li:hover a:after {display: block;}
+
+.gnb_wrap a.logo_ico img { display: block; width: 60px; height: 60px; clear:both; position: absolute; top:15px; right:5%;}
+
+/*ft: 가운데 정렬 안 될때 중간에 clrfx 설정해서 넣어주기 [.page 뒤에 .page:after 작용]*/
+.ft { width: 100vw; height:auto; position: relative; overflow: hidden; padding: 30px 0;}
+.ft:after { content:""; display: block; height:1px; clear:both; }
+.ft_wrap { width:1440px; margin: 10px auto;  }
+.ft .text_wrap { float: left; width: 40%; }
+.ft .text_box01{ clear:both;}
+.ft .text_box01 li {float: left;}
+.ft .text_box01 li a { display: block; color: black; padding-right: 20px; padding-bottom: 10px;}
+.ft .text_box01 li a:after {content:"|"; text-align: right; padding-left: 20px;}
+.ft .text_box01 li:hover a {color: green;}
+.ft .text_box02 { clear:both; font-size: 14px; color:#ccc; }
+.ft .text_box02 p {padding:5px 0}
+.ft .copyright {  font-size: 14px; color:#ccc;  }
+
+.ft .tell_box { float: left; width: 20%; font-size:15px; text-align: center; padding-left: 20px; margin-top: -5px;}
+.ft .tell_box p { padding: 5px 0; font-weight: 600;}
+.ft .tell_box span { font-size: 30px; font-weight: 700;}
+
+.ft .ft_logo { clear:both;  position:absolute; right: 21%; top: 40px; }
+

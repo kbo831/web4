@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>시드물리뉴얼 포트폴리오</title>
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="애플 이미지 미정" />
+    <link rel="apple-touch-icon-precomposed" href="애플이미지미정" />
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+
+    <meta name="title" content="시드물리뉴얼 포트폴리오">
+    <meta name="keywords" content="시드물, 자연뷰티, 천연성분화장품, 천연식물성분, 천연보존시스템, 동물실험반대, 아름다운가게, 자연사랑, 자연보호 ">
+    <meta name="description" content="자연은 사람보호, 사람은 자연보호, 천연성분을 사용하는 자연뷰티 브랜드 시드물 홈페이지입니다.">
+    <meta http-equiv="refresh" content="180">
+    <meta property="og:title" content="자연뷰티브랜드 시드물">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="자연은 사람보호, 사람은 자연보호, 천연성분을 사용하는 자연뷰티 브랜드 시드물 홈페이지입니다.">
+    <!--오픈 그래프 이지미 넣기-->
+    <meta property="og:image" content="jpg">
+    <meta property="og:url" content="www.sidmool.com">
+    <meta property="og:site_name" content="자연뷰티화장품 시드물">
+
+
+    <title>시드물리뉴얼포트폴리오홈페이지</title>
+    
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!--모바일에서 데탑전환 또는 반대 스크립트-->
+    <script src="./js/device.js"></script>
+    <script>
+        /*   $(document).ready(function() {
+            deviceCheck1();
+        });*/
+    </script>
+    <link rel="stylesheet" href="css/clear.css">
+    <link rel="stylesheet" href="./sub_common.css">
+    <link rel="stylesheet" href="./sub03.css">
+    
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var pageTop = $(window).scrollTop();
+            if(pageTop>=350) {
+                $(".header").addClass("active");
+            } else {
+                $(".header").removeClass("active");
+            }
+        });
+    });    
+    </script>
+    <script>
+    
+   $(document).ready(function(){
+        $(".pro_lst_data li.pro_item").each(function(){
+            if($(this).hasClass("hot")) {
+                $(this).find(".data-type-box").append("<img src='./sub/hot.gif' alt='hot'>");
+            }
+            if($(this).hasClass("best")) {
+                $(this).find(".data-type-box").prepend("<img src='./sub/best.gif' alt='best'>");
+            }
+        });    
+       $(".pro_btn_box li button").click(function(){
+           var dataFilter = $(this).attr("data-type");
+           $(".pro_lst_data li.pro_item").css("display", "none");
+           $(".pro_lst_data li.pro_item").filter("."+dataFilter).css("display","block");
+       }); 
+       $(".pro_btn_box li button[data-type='all']").click(function(){
+           $(".pro_lst_data li.pro_item").css("display","block");
+       }); 
+    });    
+
+    
+    </script>
+     
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd_wrap active">
+            <nav class="tnb">
+                <ul>
+                    <li>
+                        <a href="">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="">로그인</a>
+                    </li>
+                    <li>
+                        <a href="">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="">장바구니<span class="buy_num">(0)</span>
+                        </a>
+                    </li>
+                    <li><a href="">배송조회</a></li>
+                </ul>
+            </nav>
+            <div class="gnb_wrap">
+                <a href="index.html" class="logo">
+                    <img src="./main/seedmol_tnb_logo(230_70).png" alt="시드물_로고">
+                </a>
+                <nav class="gnb">
+                    <ul class="gnb_lst">
+                        <li>
+                            <a href="sub01.html">홍보영상</a>
+                        </li>
+                        <li>
+                            <a href="sub02.html">제품구매</a>
+                        </li>
+                        <li>
+                            <a href="sub03.html">브랜드 PHILOSOPHY</a>
+                        </li>
+                        <li>
+                            <a href="sub04.html">브랜드 스토리</a>
+                        </li>
+                        <li>
+                            <a href="sub05.html">시드물 통신</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="index.html" class="logo_ico">
+                    <img src="./main/tnb_end_img.png" alt="시드물_아이콘">
+                </a>
+            </div>
+        </header>
+        <main class="con clrfx"> 
+             <div class="bread_box clrfx">
+                 <ul class="bread_lst">
+                     <li>
+                         <a href="index.html">HOME</a>
+                     </li>
+                     <li>
+                         <span>제품구매하기</span>
+                     </li>
+                 </ul>
+             </div>
+            <div class="pro_lst clrfx ">
+                <ul class="pro_btn_box">
+                    <li>
+                        <button>All</button>
+                    </li>
+                    <li>
+                        <button>New</button>
+                    </li>
+                    <li>
+                        <button>Hot</button>
+                    </li>
+                    <li>
+                        <button>Best</button>
+                    </li>
+                    <li>
+                        <button>High</button>
+                    </li>
+                    <li>
+                        <button>Low</button>
+                    </li>
+                </ul>
+                <ul class="pro_lst_data">
+                    <li class="pro_item">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst01.jpg" class="pro_pic" alt="시카로퓨어비피다앰플">
+                                <h4 class="pro_tit">시카로 퓨어 비피다 95 앰플 33ml</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/MD.gif" alt="MD">
+                                <img src="./sub/new.gif" alt="new">
+                            </div>
+                            <p class="pro_price">24,600원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                    <li class="pro_item new best hot">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst02.jpg" class="pro_pic" alt="시카로광채탄력크림">
+                                <h4 class="pro_tit">시카로 광채 탄력 크림</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/MD.gif" alt="MD">
+                                <img src="./sub/new.gif" alt="new">
+                            </div>
+                            <p class="pro_price">31,200원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                    <li class="pro_item new hot best">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst03.jpg" class="pro_pic" alt="시카로광채앰플">
+                                <h4 class="pro_tit">시카로광채앰플</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/new.gif" alt="new">
+                            </div>
+                            <p class="pro_price">30,870원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                    <li class="pro_item new high hot">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst04.jpg" class="pro_pic" alt="센텔라 구스팟 크림">
+                                <h4 class="pro_tit">시드물 센텔라 구스팟 크림 30ml</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/MD.gif" alt="MD">
+                            </div>
+                            <p class="pro_price">16,800원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                    <li class="pro_item new low best">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst05.jpg" class="pro_pic" alt="블래미쉬에센셜">
+                                <h4 class="pro_tit">닥터갈라톡 블래미쉬 케어 에센셜 150ml</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/new.gif" alt="new">
+                            </div>
+                            <p class="pro_price">9800원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                    <li class="pro_item new hot high">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst06.jpg" class="pro_pic" alt="센텔라 시카힐스크림">
+                                <h4 class="pro_tit">센텔라시카 힐스크림 35g</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/new.gif" alt="new">
+                            </div>
+                            <p class="pro_price">22,000원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                    <li class="pro_item best high">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst07.jpg" class="pro_pic" alt="민중기EGF앰플">
+                                <h4 class="pro_tit">민중기 EGF 앰플 30ml</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/MD.gif" alt="MD">
+                                <img src="./sub/new.gif" alt="new">
+                            </div>
+                            <p class="pro_price">82,200원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                    <li class="pro_item new best low">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst08.jpg" class="pro_pic" alt="민중기 EGF110 리퀴드">
+                                <h4 class="pro_tit">민중기 EGF 110 뤼키드 110ml</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/MD.gif" alt="MD">
+                            </div>
+                            <p class="pro_price">42,800원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                    <li class="pro_item hot high">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst09.jpg" class="pro_pic" alt="민중기 EGF
+리페어 크림">
+                                <h4 class="pro_tit">민중기 EGF 앰플 11ml</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/MD.gif" alt="MD">
+                            </div>
+                            <p class="pro_price">39,800원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                    <li class="pro_item best hot ">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst10.jpg" class="pro_pic" alt="휴먼올리고리페어앰플">
+                                <h4 class="pro_tit">휴먼 올리고 리페어 앰플 13ml</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/MD.gif" alt="MD">
+                                <img src="./sub/new.gif" alt="new">
+                            </div>
+                            <p class="pro_price">18,800원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                    <li class="pro_item">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst11.jpg" class="pro_pic" alt="휴먼올리고리페어크림">
+                                <h4 class="pro_tit">휴먼 올리고 리페어 크림 50g</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/new.gif" alt="new">
+                            </div>
+                            <p class="pro_price">61,200원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                    <li class="pro_item low best">
+                        <div class="pro_box">
+                            <a href="" class="thum_box">
+                                <img src="./sub/pro_lst12.jpg" class="pro_pic" alt="휴먼올리고리페어아이크림">
+                                <h4 class="pro_tit">휴먼 올리고 리페어 아이크림 30g</h4>
+                            </a>
+                            <div class="data-type-box">
+                                <img src="./sub/MD.gif" alt="MD">
+                                <img src="./sub/new.gif" alt="new">
+                            </div>
+                            <p class="pro_price">21,600원</p>
+                            <a href="" class="btn pro_btn"><span>제품구매하기</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>    
+
+        </main>
+        
+        <footer class="ft ">
+            <div class="ft_wrap">
+                <div class="text_wrap">
+                    <ul class="text_box01 text_box">
+                        <li>
+                            <a href="">회사소개</a>
+                        </li>
+                        <li>
+                            <a href="">이용안내</a>
+                        </li>
+                        <li>
+                            <a href="">개인정보처리방침
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                    </ul>
+                    <div class="text_box02 ">
+                        <p>회사명: 주식회사 시드물</p>
+                        <p>본사:대전광역시 중구 안영로 42(안영동) 우편번호)35083</p>
+                        <p>대표: 민중기 사업자등록번호:305-81-94469</p>
+                        <p>화장품 제조판매업 등록필증 제 1163호</p>
+                        <p class="copyright">
+                        COPYRIGHT(C) 2008<span>SIDMOOL</span>ALL RIGHTS RESERVED.
+                        <span>Hosting by Makeshop</span>
+                    </p>
+                    </div>
+                </div>
+                <div class="tell_box">
+                    <p><span class="01">상담문의</span></p>
+                    <p ><span>Tell: 1577-9638</span></p>
+                    <p>해외: +82-42-716-0227</p>
+                    <p>팩스:042-367-7989</p>
+
+                </div>
+                <div class="ft_logo text_box">
+                    <img src="./main/seedmol_tnb_end_logo.png" alt="tnb_로고">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

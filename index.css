@@ -7,21 +7,21 @@ ul { list-style: none; }
 a { text-decoration: none; }
 input,button,img { outline: 0; border: 0; background: none; }
 
-.hd_wrap,.gnb_wrap,.con,.ft{ clear:both; }
+.hd_wrap,.gnb_wrap,.con,.ft { clear:both; }
 .tnb {clear: both; }
 .vs { clear: both; }
 
-.hd_wrap { width:100%; }
-
+.hd_wrap { width:100%; position:fixed; z-index: 9999; background-color: #fff;  overflow: hidden;}
+.clrfx:after { content:""; height:1px; display: block;}
 /*tnb*/
-.tnb { width: 1440px; margin:0 auto;}
+.tnb { width: 1440px; margin:0 auto; overflow: hidden;}
 .tnb ul { float: right;}
 .tnb ul li { float: left; height:40px;  }
 .tnb ul li a { color: black; display: block; padding:10px; height:40px; line-height: 40px; font-weight: 700;}
 .tnb ul li a:hover { color: green;}
 
 /*gnb*/
-.gnb_wrap { width: 1440px; margin: 0 auto; position: relative;}
+.gnb_wrap { width: 1440px; margin: 0 auto; position: relative; overflow: hidden;}
 .gnb_wrap a.logo { display: block; width: 200px; height: 60px; }
 .gnb  { width:1000px; height: 60px;  margin:0 auto; margin-top: -45px; }
 .gnb_lst { width:100%; height: auto; margin-left: 20px; }
@@ -34,10 +34,10 @@ input,button,img { outline: 0; border: 0; background: none; }
 .gnb_lst li:hover a {color: green;}
 .gnb_lst li:hover a:after {display: block;}
 
-.gnb_wrap a.logo_ico img { display: block; width: 60px; height: 60px; clear:both; position: absolute; top:15px; right:8%;}
+.gnb_wrap a.logo_ico img { display: block; width: 60px; height: 60px; clear:both; position: absolute; top:15px; right:5%;}
 
 /*content*/
-.con { width: 100%; }
+.con { width: 100%; overflow: hidden; }
 /*슬라이더 다시 해보기*/
 .vs { width: 100%;}
 .bxslider { width: 400%;}
@@ -49,39 +49,40 @@ input,button,img { outline: 0; border: 0; background: none; }
 .bxslider li .sl_vs03 { background-image: url(main/main_banner03.jpg);}
  
 /*page01*/
-.page { width: 100vw; margin: 0 auto; clear:both; position: relative;  min-height: 600px;}
-.page:after { content:""; display: block; height:1px; clear: both;}
-#page01{ position:relative;}
+.page { width: 100vw; margin: 0 auto; clear:both; position: relative;  overflow: hidden; min-height: 600px;}
+
+#page01{ position:relative; }
 .fr_box { position: absolute; width:100%; padding: 100px 0; display: none;}
 .txt_box { width:50%; height: 400px; font-size: 50px; text-align: center; float:left; }
-.u_box { width: 700px; height:400px; float: right;}
-.u_box iframe { width: 100%; height: 400px; margin-right: 200px;}
+.u_box { width: 600px; height:400px; float: right; padding-right: 200px; }
+.u_box iframe { width: 100%; height: 400px; }
 #page01 .box02 {display:none;}
 #page01 .box03 {display:none;}
 
 /*box01*/
-#page01 { width:1440px; margin-bottom: 50px;}
+#page01 { width:90%; margin-bottom: 50px; position:relative;}
 #page01 p {font-weight: 700;}
 #page01 .box01 .tit01 { font-size: 30px; }
 #page01 .box01 .tit02 { font-size: 45px; color: green}
 #page01 .box01 .tit03 { font-size: 45px;}
-#page01 .box01 a { display: block; width: 120px; height:80px; font-size: 30px; line-height:80px; position: absolute; left:20%; bottom: 27%; border: 1px solid transparent; border-radius: 40px; color:#fff; font-weight: 700;background-color: green; }
+#page01 .box01 a { display: block; width: 120px; height:80px; font-size: 30px; line-height:80px; position: absolute; left:21%; bottom: 27%; border: 1px solid transparent; border-radius: 40px; color:#fff; font-weight: 700;background-color: green; }
 #page01 .box01 a:hover { border: 2px solid green; background-color: white; color: green; } 
 
-#page01 .button_box{ width:100%; height:100%; }
-#page01 .button_box li { position:absolute; bottom:8%; left:19%; width: 150px; height:40px;}
-#page01 .button_box label { display: block; width: 40px; height: 40px; background-color:transparent; border:1px solid transparent; border-radius: 20px; text-align: center; background-color: #ddd;
-line-height: 40px; color: #fff; font-weight: 700; }
-#page01 .button_box .prev { float:left; }
+/*button*/
+#page01 .fr_box label { display: block; width: 100px; height: 100px; position: absolute; top:40%; text-indent: -9999px; }
+/*호버시 각도도절 효과 넣기:transition 과 trasform: rotate("xxdge"); position: absolute 가 있어야 조절 가능 */
+#page01 .fr_box label.prev { left:0; background-image: url("main/leaf_left_btn.png"); }
 
-#page01 .button_box .next {float: right; }
+#page01 .fr_box label.next { right:0; background-image: url("main/leaf_right_btn.png"); }
+
+#page01 .radio { display: none;}
 
 /*box2*/
 #page01 p {font-weight: 700;}
 #page01 .box02 .tit01 { font-size: 30px; }
 #page01 .box02 .tit02 { font-size: 45px; color: #633702; }
 #page01 .box02 .tit03 { font-size: 45px;}
-#page01 .box02 a { display: block; width: 120px; height:80px; font-size: 30px; line-height:80px; position: absolute; left:20%; bottom: 27%; border: 1px solid transparent; border-radius: 40px; color:#fff; font-weight: 700;background-color: #633702; }
+#page01 .box02 a { display: block; width: 120px; height:80px; font-size: 30px; line-height:80px; position: absolute; left:21%; bottom: 27%; border: 1px solid transparent; border-radius: 40px; color:#fff; font-weight: 700;background-color: #633702; }
 #page01 .box02 a:hover { border: 2px solid #633702; background-color: white; color: #633702; } 
 
 /*box3*/
@@ -89,7 +90,7 @@ line-height: 40px; color: #fff; font-weight: 700; }
 #page01 .box03 .tit01 { font-size: 30px; }
 #page01 .box03 .tit02 { font-size: 45px; color: #ffcc00; }
 #page01 .box03 .tit03 { font-size: 45px;}
-#page01 .box03 a { display: block; width: 120px; height:80px; font-size: 30px; line-height:80px; position: absolute; left:20%; bottom: 27%; border: 1px solid transparent; border-radius: 40px; color:#fff; font-weight: 700;background-color: #ffcc00; }
+#page01 .box03 a { display: block; width: 120px; height:80px; font-size: 30px; line-height:80px; position: absolute; left:21%; bottom: 27%; border: 1px solid transparent; border-radius: 40px; color:#fff; font-weight: 700;background-color: #ffcc00; }
 #page01 .box03 a:hover { border: 2px solid #ffcc00; background-color: white; color: #ffcc00; } 
 
 
@@ -110,4 +111,22 @@ line-height: 40px; color: #fff; font-weight: 700; }
 
 /*page04*/
 
-/*ft*/
+/*ft: 가운데 정렬 안 될때 중간에 clrfx 설정해서 넣어주기 [.page 뒤에 .page:after 작용]*/
+.ft { width: 100vw; height:auto; position: relative; overflow: hidden; padding: 30px 0;}
+.ft:after { content:""; display: block; height:1px; clear:both; }
+.ft_wrap { width:1440px; margin: 10px auto;  }
+.ft .text_wrap { float: left; width: 40%; }
+.ft .text_box01{ clear:both;}
+.ft .text_box01 li {float: left;}
+.ft .text_box01 li a { display: block; color: black; padding-right: 20px; padding-bottom: 10px;}
+.ft .text_box01 li a:after {content:"|"; text-align: right; padding-left: 20px;}
+.ft .text_box01 li:hover a {color: green;}
+.ft .text_box02 { clear:both; font-size: 14px; color:#ccc; }
+.ft .text_box02 p {padding:5px 0}
+.ft .copyright {  font-size: 14px; color:#ccc;  }
+
+.ft .tell_box { float: left; width: 20%; font-size:15px; text-align: center; padding-left: 20px; margin-top: -5px;}
+.ft .tell_box p { padding: 5px 0; font-weight: 600;}
+.ft .tell_box span { font-size: 30px; font-weight: 700;}
+
+.ft .ft_logo { clear:both;  position:absolute; right: 21%; top: 40px; }

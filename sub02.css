@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.con { width: 100%; }
+
+.bread_lst {float: right;}
+.bread_lst li { float: left; padding:20px 5px; font-size: 20px; }
+.bread_lst li + li:before { content:"<"; display: block; float: left; padding-right: 10px;}
+.bread_lst li a { color: black; border-bottom: 1px solid transparent; }
+.bread_lst li a:hover { color: green; border-bottom: 1px solid green;}
+
+.pro_lst { width: 1440px; margin: 0 auto; overflow: hidden;}
+/*overflow: hidden 을 안해주면 안의 내용물이 영역을 넘어감 그래서 높이나 위치가 달라질 수 있음.*/
+.pro_btn_box {float:right; clear:both;}
+.pro_lst  .pro_btn_box li {float: left;  }
+.pro_lst  .pro_btn_box li button { font-size: 20px; cursor:pointer; }
+.pro_lst  .pro_btn_box li button:after { content:"|"; display: block; float:right; padding:0 20px; }
+.pro_lst  .pro_btn_box li button:hover { color: green;}
+
+/*product_lst: */
+.pro_lst_data { width: 1440px; margin: 20px auto; padding-top: 100px; }
+.pro_lst_data li.pro_item { float: left;  padding:10px 0px; width:33.3333%; height: 500px; margin-top:50px; overflow:hidden; transition: 0.3s; }
+.pro_lst_data li.pro_item:hover { margin-top:0px; }
+
+.pro_lst_data li.pro_item a {color: black; font-weight: 700px;}
+.pro_lst_data .pro_box { text-align: center; }
+
+.pro_lst_data .pro_tit { padding-top: 15px; }
+.pro_lst_data .pro_price { font-weight: 700;}
+.pro_lst_data .pro_btn { display: block; width: 120px; height: 50px; line-height: 50px;  background-color: green; margin: 0 auto; font-weight: 700; border-radius: 5px; margin-top: 5px;}
+.pro_lst_data .pro_btn span { color: #fff; }
+
+
