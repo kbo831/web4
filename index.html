@@ -28,11 +28,8 @@
     <!--폰트 .css-->
 
     <link rel="stylesheet" href="css/clear.css">
-    <!--공통, 메인 css링크-->
-    <link rel="stylesheet" href="./index.css">
-    <!--ㅈㅔ이쿼리 js 넣기-->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <!--모바일에서 데탑전환 또는 반대 스크립트-->
+    <!--모바일에서 데탑 기기전환 또는 반대 스크립트-->
     <script src="js/device.js"></script>
     <script>
      /*   $(document).ready(function() {
@@ -43,19 +40,19 @@
     <!--슬라이더링크와 자바스크립트 링크-->
     <link rel="stylesheet" href="./bx/bxslider.css">
     <style>
- 
     </style>
     <script src="bx/bxslider.js"></script>
-
-    <link rel="stylesheet" href="./slick/slick.css">
+    
+    <link rel="stylesheet" href="owl/owl.carousel.css">
     <style></style>
+    <link rel="stylesheet" href="owl/owl.carousel.js">
+    
+    <link rel="stylesheet" href="./slick/slick.css">
+    <style>
+    </style>
     <script scr="./slick/slick.js"></script>
-
-
-
-
-
-
+    <!--슬라이더 링크를 먼저 놓고 스타일시트를 적용해야 위 태그가 수정가능함-->
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
@@ -89,7 +86,7 @@
                             <a href="sub01.html">홍보영상</a>
                         </li>
                         <li>
-                            <a href="sub02.html">제품구</a>
+                            <a href="sub02.html">제품구매</a>
                         </li>
                         <li>
                             <a href="sub03.html">브랜드 PHILOSOPHY</a>
@@ -107,35 +104,38 @@
                 </a>
             </div>
         </header>
-        <content class="con">
-            <firgure class="vs">
-                <div class="bx_viewport">
-                   
+        <main class="con clrfx">
+            <div class="wrap bx-wrapper">
+                <figure class="bx-viewport visual1" id="vs1">
                     <ul class="bxslider">
-                        <li class="item" >
-                            <a href="" class="sl_vs01">배너1</a>
+                        <li class="item">
+                            <img src="./main/main_banner01-2.jpg" title="피부의고향" alt="이미지1">
                         </li>
                         <li class="item">
-                            <a href="" class="sl_vs02">배너2</a>
+                            <img src="./main/main_banner02.jpg" title="수분크림라인" alt="이미지2">
                         </li>
                         <li class="item">
-                          <a href="" class="sl_vs03">배너3</a>
+                            <img src="./main/main_banner03.jpg"  title="아름다운가게" alt="이미지3">
                         </li>
                     </ul>
-                </div>
-            </firgure>
-            <!--<script src="bx/bxslider.js"></script>
-            <script>
-             $(document).ready(function(){
-                 $('.bxslider').bxSlider({
-                     auto: true,
-                     speed: 200,
-                     pause: 5000,
-                     mode: 'horizental',
-                     pager: true,
-                 });
-             });
-            </script>-->
+                  
+                    <script>
+                        $(document).ready(function() {
+                            $('.bxslider').bxSlider({
+                                auto: true, //자동슬라이딩
+                                speed: 500,
+                                pause: 4000, //슬라이딩 추가
+                                mode: 'horizontal',
+                                autoControls: true,
+                                pager: true,
+                              
+                            });
+                        });
+                    </script>
+                </figure>
+
+            </div>
+
             <!--page01-->
             <div class="page clrfx" id="page01">
                <input type="radio" name="radio" class="radio" id="ra1" checked>
@@ -202,57 +202,90 @@
             </div>
             <!--page03-->
             <div class="page clrfx" id="page03">
-                <figure>
-                    <div class="slider_box">
-                        <ul class="slider_lst ">
-                            <li class="item01">
-                                <img src="./main/3page_full_01-si.jpg" alt="">
+                <div class="wrap">
+                    <div class="visual2" id="vs2">
+                        <ul class="owl-carousel">
+                            <li class="item">
+                                <img src="./main/3page_full_01-si_1.jpg" title="갈라토닉크림" alt="이미지1">
+                                <a href="sub02.html" class="more">MORE</a>
                             </li>
-                            <li class="item02">
-                                <img src="./main/3page_full_01-si2.jpg" alt="">
+                            <li class="item">
+                                <img src="./main/3page_full_01-si2_1.jpg" title="비피다앰플" alt="이미지1">
+                                <a href="sub02.html" class="more">MORE</a>
                             </li>
-                            <li class="item03">
-                                <img src="./main/3page_full_01-si3.jpg" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="slider_box">
-                        <ul class="slider_lst sl_lst02">
-                            <li class="item01">
-                                <img src="./main/3page_full_02-sent.jpg" alt="">
-                            </li>
-                            <li class="item02">
-                                <img src="./main/3page_full_02-sent02.jpg" alt="">
-                            </li>
-                            <li class="item03">
-                                <img src="./main/3page_full_02-sent03.jpg" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="slider_box">
-                        <ul class="slider_lst sl_lst03">
-                            <li class="item01">
-                                <img src="./main/3page_full_03-min01.jpg" alt="">
-                            </li>
-                            <li class="item02">
-                                <img src="./main/3page_full_03-min02.jpg" alt="">
-                            </li>
-                            <li class="item03">
-                                <img src="./main/3page_full_03-min03.jpg" alt="">
+                            <li class="item">
+                                <img src="./main/3page_full_01-si3_1.jpg" title="광채앰플" alt="이미지1">
+                                <a href="sub02.html" class="more">MORE</a>
                             </li>
                         </ul>
 
                     </div>
-                </figure>
-            </div>
-            <div class="page clrfx" id="page4">
-                <div class="full_intro">
-                   <a href="sub04.html">
-                       <img src="./main/page4_vs_bran_intro_txt.jpg" alt="">
-                   </a> 
+                    <div class="wrap">
+                        <div class="visual2" id="vs3">
+                            <ul class="owl-carousel">
+                                <li class="item">
+                                    <img src="./main/3page_full_02-sent_1.jpg" title="구스팟크림" alt="이미지1">
+                                    <a href="sub02.html" class="more">MORE</a>
+                                </li>
+                                <li class="item">
+                                    <img src="./main/3page_full_02-sent02_1.jpg" title="시카크림" alt="이미지1">
+                                    <a href="sub02.html" class="more">MORE</a>
+                                </li>
+                                <li class="item">
+                                    <img src="./main/3page_full_02-sent03_1.jpg" title="블레미쉬에센셜" alt="이미지1">
+                                    <a href="sub02.html" class="more">MORE</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="wrap">
+                            <div class="visual2" id="vs4">
+                                <ul class="owl-carousel">
+                                    <li class="item">
+                                        <img src="./main/3page_full_03-min01_1.jpg" title="EGF 리퀴드" alt="이미지1">
+                                        <a href="sub02.html" class="more">MORE</a>
+                                    </li>
+                                    <li class="item">
+                                        <img src="./main/3page_full_03-min02_1.jpg" title="리페어크림" alt="이미지1">
+                                        <a href="sub02.html" class="more">MORE</a>
+                                    </li>
+                                    <li class="item">
+                                        <img src="./main/3page_full_03-min03_1.jpg" title="EGI 앰플" alt="이미지1">
+                                        <a href="sub02.html" class="more">MORE</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!--버튼은 자동으로 생성되서 css로 만들어주기-->
+                            <script src="owl/owl.carousel.js"></script>
+                            <script>
+                                $(document).ready(function() {
+                                    $('.owl-carousel').owlCarousel({
+                                        autoplay: true,
+                                        loop: true,
+                                        margin: 0,
+                                        nav: true,
+                                        mouseDrag: true,
+                                        dots: true,
+                                        touchDrag: true,
+                                    });
+                                });
+                            </script>
+                        </div>
+
+
+
+                    </div>
+                    <div class="page clrfx" id="page4">
+                        <div class="full_intro">
+                            <a href="sub04.html">
+                                <img src="./main/page4_vs_bran_intro_txt.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </content>
+            </main>
         <footer class="ft clrfx ">
             <div class="ft_wrap">
                 <div class="text_wrap">

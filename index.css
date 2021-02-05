@@ -7,17 +7,19 @@ ul { list-style: none; }
 a { text-decoration: none; }
 input,button,img { outline: 0; border: 0; background: none; }
 
+.clrfx:after { content:""; display:block; clear: both; }
 .hd_wrap,.gnb_wrap,.con,.ft { clear:both; }
 .tnb {clear: both; }
 .vs { clear: both; }
 
-.hd_wrap { width:100%; position:fixed; z-index: 9999; background-color: #fff;  overflow: hidden;}
+.hd_wrap { width:100%; position:fixed; z-index: 9999; background-color:rgba(255,255,255);  overflow: hidden; border-bottom: 1px solid #ddd;}
 .clrfx:after { content:""; height:1px; display: block;}
+
 /*tnb*/
 .tnb { width: 1440px; margin:0 auto; overflow: hidden;}
 .tnb ul { float: right;}
 .tnb ul li { float: left; height:40px;  }
-.tnb ul li a { color: black; display: block; padding:10px; height:40px; line-height: 40px; font-weight: 700;}
+.tnb ul li a { color: black; display: block; padding:10px; height:40px; line-height: 40px; font-weight:400; font-size:14px;}
 .tnb ul li a:hover { color: green;}
 
 /*gnb*/
@@ -37,17 +39,8 @@ input,button,img { outline: 0; border: 0; background: none; }
 .gnb_wrap a.logo_ico img { display: block; width: 60px; height: 60px; clear:both; position: absolute; top:15px; right:5%;}
 
 /*content*/
-.con { width: 100%; overflow: hidden; }
-/*슬라이더 다시 해보기*/
-.vs { width: 100%;}
-.bxslider { width: 400%;}
-.bxslider li { width: 25%; overflow: hidden; float: left; overflow:hidden;}
-.bxslider li a { display: block; width:1920px; height:840px; background-repeat: no-repeat; background-position: center center; overflow: hidden;}
+.con { width: 100%;  }
 
-.bxslider li .sl_vs01 { background-image: url(main/main_banner01-2.jpg);}
-.bxslider li .sl_vs02 { background-image: url(main/main_banner02.jpg);}
-.bxslider li .sl_vs03 { background-image: url(main/main_banner03.jpg);}
- 
 /*page01*/
 .page { width: 100vw; margin: 0 auto; clear:both; position: relative;  overflow: hidden; min-height: 600px;}
 
@@ -104,12 +97,16 @@ input,button,img { outline: 0; border: 0; background: none; }
 #page02 .full_banner img { display: block; width:90%; height:auto; margin: 0 auto;}
 
 /*page03*/
-#page03 figure { margin:0 auto;}
-#page03 .slider_box { width:100%;  }
-#page03 .slider_lst { width:33.3333%; float:left; }
-#page03 .slider_lst li { width:100%; float:left; overflow:hidden;}
+#page03 { width: 100%; }
+#page03 .owl-carousel {width: 33.333%;  float: left; overflow:hidden;}
+#page03 .owl-carousel li { position: relative; }
+#page03 .owl-carousel img { display:block; text-align: center; width:590px; height:385px;}
+#page03 .owl-nav{ display: none;}
+#page03 .more { display: block; position: absolute; bottom: 20%; right: 30%; background-color: transparent; color:darkgreen; font-weight: 700; border:1px solid transparent; width: 60px; height: 40px; line-height: 40px; text-align: center; border-radius: 15px; }
 
+#page03 .more:hover {color: white; background-color:rgba(0,128,0,0.6); text-shadow: 3px 5px 5px #009933;}
 /*page04*/
+
 
 /*ft: 가운데 정렬 안 될때 중간에 clrfx 설정해서 넣어주기 [.page 뒤에 .page:after 작용]*/
 .ft { width: 100vw; height:auto; position: relative; overflow: hidden; padding: 30px 0;}

@@ -51,7 +51,7 @@
         #page01 .box03 {display:none;}
 
         /*box01*/
-        #page01 { width:90%; margin-bottom: 50px; position:relative;}
+        #page01 { width:90%; margin-top:120px; position:relative;}
         #page01 p {font-weight: 700;}
         #page01 .box01 .tit01 { font-size: 30px; }
         #page01 .box01 .tit02 { font-size: 45px; color: green}
@@ -90,12 +90,23 @@
         #ra2:checked ~ .fr_box.box02 {display: block;}
         #ra3:checked ~ .fr_box.box03 {display: block;}
     </style>
-
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var pageTop = $(window).scrollTop();
+            if(pageTop>=350) {
+                $(".header").addClass("active");
+            } else {
+                $(".header").removeClass("active");
+            }
+        });
+    });    
+    </script>
 </head>
 
 <body>
     <div class="wrap">
-        <header class="hd_wrap">
+        <header class="hd_wrap active clrfx">
             <nav class="tnb">
                 <ul>
                     <li>
@@ -120,7 +131,7 @@
                 </a>
                 <nav class="gnb">
                     <ul class="gnb_lst">
-                        <li>
+                        <li class="active">
                             <a href="sub01.html">홍보영상</a>
                         </li>
                         <li>
