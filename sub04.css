@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .con { width: 100%;}
-.frm_box { width:100%; clear:both;  height: 400px; margin-left: 30px;}
+.frm_box { width:100%; clear:both;  height: 400px; margin-left: 30px; position:relative;}
 .frm_box section { width:1440px;  margin: 30px auto; color: #ddd;font-size: 35px; text-shadow: 1px 1px 1px #03731f; position: relative;}
 .frm_box section span { color:green; font-size: 50px;}
 .frm_box .frm_box_lst { width: 100%; padding-top: 35px }
@@ -9,5 +9,5 @@
 
 /*여기 버튼 다시*/
 
-/*.frm_box section a.more { display: block; font-size:25px; width: 100px; height: 50px; line-height: 50px;  background-color: green; text-align: center; border:1px solid transparent; color: #fff; border-radius: 25px; margin-top: 15px;}
-.frm_box .more:hover { border:1px solid green; background-color: #fff;}*/
+.frm_box section a.more { display: block; position:absolute; top:28%; right:5%; font-size: 18px; width: 80px; height: 50px; line-height: 50px; text-align: center; color:black; }
+.frm_box section a.more:after { content:"+"; padding-left: 5px; line-height: 50px;}

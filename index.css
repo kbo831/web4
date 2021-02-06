@@ -29,14 +29,14 @@ input,button,img { outline: 0; border: 0; background: none; }
 .gnb_lst { width:100%; height: auto; margin-left: 20px; }
 .gnb_lst li { float: left; height: 60px; padding:0 10px; position: relative; }
 .gnb_lst:first-child {padding-left: 100px;}
-.gnb_lst li a { float: left; color: black; font-size: 20px; font-weight: 700; line-height: 60px; display:block; text-align: center; padding:0 30px; }
+.gnb_lst li a { float: left; color: black; font-size: 17px; font-weight: 700; line-height: 60px; display:block; text-align: center; padding:0 30px; }
 
 .gnb_lst li a:after { content:""; display: block; width:20px; height:20px; background-image:url(main/gnb_a_bg.png); text-align: center; background-repeat: no-repeat; background-position: center left; position: absolute; top:20px; right:10px; display: none; }
 
 .gnb_lst li:hover a {color: green;}
 .gnb_lst li:hover a:after {display: block;}
 
-.gnb_wrap a.logo_ico img { display: block; width: 60px; height: 60px; clear:both; position: absolute; top:15px; right:5%;}
+.gnb_wrap a.logo_ico img { display: block; width: 60px; height: 60px; clear:both; position: absolute; top:15px; right:3%;}
 
 /*content*/
 .con { width: 100%;  }

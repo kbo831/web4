@@ -25,20 +25,24 @@
 
 
     <title>시드물리뉴얼포트폴리오홈페이지</title>
-    
+    <!--폰트 .css-->
+
+    <link rel="stylesheet" href="css/clear.css">
+    <!--공통, 메인 css링크-->
+    <link rel="stylesheet" href="./sub_common.css">
+    <link rel="stylesheet" href="join.css">
+    <!--ㅈㅔ이쿼리 js 넣기-->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <!--모바일에서 데탑전환 또는 반대 스크립트-->
-    <script src="./js/device.js"></script>
+    <script src="js/device.js"></script>
     <script>
-      
+        /*   $(document).ready(function() {
+            deviceCheck1();
+        });*/
     </script>
-    <link rel="stylesheet" href="css/clear.css">
-    <link rel="stylesheet" href="./sub_common.css">
-    <link rel="stylesheet" href="sub04.css">
     <style>
-    
+        
     </style>
-    
     <script>
     $(document).ready(function(){
         $(window).scroll(function(){
@@ -51,19 +55,18 @@
         });
     });    
     </script>
-   
 </head>
 
 <body>
     <div class="wrap">
-        <header class="hd_wrap active">
-            <nav class="tnb">
+        <header class="hd_wrap active clrfx">
+            <nav class="tnb clrfx">
                 <ul>
                     <li>
-                        <a href="join.html">회원가입</a>
+                        <a href="">회원가입</a>
                     </li>
                     <li>
-                        <a href="login.html">로그인</a>
+                        <a href="">로그인</a>
                     </li>
                     <li>
                         <a href="">마이페이지</a>
@@ -75,13 +78,13 @@
                     <li><a href="">배송조회</a></li>
                 </ul>
             </nav>
-            <div class="gnb_wrap active clrfx">
+            <div class="gnb_wrap clrfx">
                 <a href="index.html" class="logo">
                     <img src="./main/seedmol_tnb_logo(230_70).png" alt="시드물_로고">
                 </a>
                 <nav class="gnb">
                     <ul class="gnb_lst">
-                        <li>
+                        <li class="active">
                             <a href="sub01.html">홍보영상</a>
                         </li>
                         <li>
@@ -90,7 +93,7 @@
                         <li>
                             <a href="sub03.html">브랜드 PHILOSOPHY</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="sub04.html">브랜드 스토리</a>
                         </li>
                         <li>
@@ -103,37 +106,12 @@
                 </a>
             </div>
         </header>
-        <main class="con clrfx"> 
-          <div class="page" id="page4">
-                <div class="full_intro">
-                    <img src="./main/page4_vs_bran_intro_txt.jpg" alt="">
-                </div>
-                <div class="frm_box clrfx">
-                    <section>
-                        <h2>Story of <span>Sidmool</span></h2>
-                        <a href="https://www.youtube.com/embed/u1cnSlrMj48" target="_blank" class="more">more</a>
-                        <ul class="frm_box_lst">
-                            <li>
-                                <iframe src="https://www.youtube.com/embed/NqyxomypxYM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </li>
-                            <li>
-                                <iframe src="https://www.youtube.com/embed/EjUD8kxd1jw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </li>
-                            <li>
-                                <iframe src="https://www.youtube.com/embed/uRuZUIOTJtY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </li>
-                            <li>
-                                <iframe src="https://www.youtube.com/embed/u1cnSlrMj48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </li>
+        <main class="con clrfx">
+       
 
-                        </ul>
-                        
-                    </section>
-                </div>
-            </div>
         </main>
         
-        <footer class="ft ">
+        <footer class="ft clrfx ">
             <div class="ft_wrap">
                 <div class="text_wrap">
                     <ul class="text_box01 text_box">
