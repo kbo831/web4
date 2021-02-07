@@ -1,1 +1,43 @@
 @charset "utf-8";
+
+.frm_fr { width:1440px; margin: 30px auto; height: auto; }
+.frm_fr .frm_tit{ width: 650px; margin: 0 auto; padding-left:36px; }
+.frm_box .frm1 { width: 650px; margin: 0 auto; margin-top: 40px}
+.frm_box .in_data { display: block; width:600px; height:30px; font-size: 15px; margin: 10px auto; padding: 5px; padding-right: 0px; border:1px solid #ddd; }
+
+/*fieldset 부분*/
+.frm_box fieldset { width:600px; margin: 10px auto; border:0;}
+.frm_box fieldset .frm_com { color: #aaa; font-size: 15px; padding: 10px 11px; } 
+
+.frm_box .agree_box{ width: 600px; margin:0 auto; border-top: 1px solid #aaa; }
+.frm_box .agree_box li { padding: 15px;}
+.frm_box .agree_box .agree_tit {  border-bottom: 1px solid #aaa; }
+.frm_box .agree_box .left_agree { float: left;}
+.frm_box .agree_box .frm_com { color: #aaa; font-size: 15px; padding: 10px 11px; }
+.frm_box .agree_box .right_agree { float: right;}
+
+.frm_box .agree_view_btn { display:block; float:right; margin-left: 10px; background-color: #ccc; color: #666; width: 70px; height: 15px; text-align: center; border:1px solid #666; border-radius: 3px; font-size: 12px; line-height: 15px; padding: 2px 0; font-weight: 600 } 
+.frm_box .agree_view_btn { display:block; float:right; margin-left: 10px; background-color: #ccc; color: #666; width: 70px; height: 15px; text-align: center; border:1px solid #666; border-radius: 3px; font-size: 14px; line-height: 15px; padding: 2px 0; } 
+
+.frm_box .in_btn { display: block; width: 600px; margin: 10px auto; font-size:15px; color: #000; border:1px solid #aaa; padding: 10px; background-color:green; color: #fff; }
+
+/*이용약관부분*/
+.protocol_frm { width:600px; margin: 0 auto;} 
+.protocol_frm .protocol_tit { padding: 15px 0;}
+.protocol_frm .protocol { width: 600px; height:100px; margin: 10px auto;overflow-y: scroll; border: 1px solid #aaa; word-break: all; white-space:pre;}
+
+/*table부분*/
+.tb { border-collapse: collapse; width: 600px; }
+.tb thead,.tb tbody { width: 100%; }
+.tb tbody {border-bottom: 1px solid #888;}
+.tb th, .tb td {height: 50px; font-size:15px; text-align: center; color:#888; border-top:1px solid #888; }
+.tb tbody th {border-right: 1px solid #888;}
+
+.tb th { background-color: #eee;}
+.tb .tb_col1,.tb .tb_col4{ width: 15%; }
+.tb .tb_col2{ width: 30%; }
+.tb .tb_col3{ width: 40%; }
+
+.protocol_frm .frm_com {text-align: center; font-size: 13px; color:#999; padding: 10px 0; line-height: 1.6;}
+
+
