@@ -5,7 +5,7 @@
 body,html { width: 100%; overflow-x:hidden; font-family: "nsL","nsL","nsEB","san-serif","serif";}
 ul { list-style: none; }
 a { text-decoration: none; }
-input,button,img { outline: 0; border: 0; background: none; }
+input,button,img{ outline: 0; border: 0; background: none; }
 
 header,.tnb,.gnb_wrap,.con,.ft{ clear:both; }
 header { width:100%; z-index: 999; background-color: #fff; }
@@ -38,6 +38,16 @@ header.active { position:fixed; top: 0; left: 0; z-index:9999; }
 
 .gnb_wrap a.logo_ico img { display: block; width: 60px; height: 60px; clear:both; position: absolute; top:15px; right:3%;}
 
+/*bread_box*/
+.bread_box { width: 1440px; margin:0 auto; height: 200px; position:relative; }
+.bread_lst { width:20%;  height:30px; box-sizing: border-box; clear:both; float:right; position: absolute; right: -60px; bottom: 9px;}
+.bread_lst li { height: 30px; line-height: 30px; float:left; font-size: 15px; }
+
+.bread_lst li span { width:130px; height:30px; line-height: 30px; text-align: center; display: block;  color: black;  }
+.bread_lst li a {width:43px; height:30px; line-height: 30px; text-align: center; display: block;  color: black; border-bottom: 1px solid transparent; }
+.bread_lst li a:hover { color: green; border-bottom: 1px solid green;}
+.bread_lst li span:before { content:"<"; padding-right: 20px; }
+
 /*ft: 가운데 정렬 안 될때 중간에 clrfx 설정해서 넣어주기 [.page 뒤에 .page:after 작용]*/
 .ft { width: 100vw; height:auto; position: relative; overflow: hidden; padding: 30px 0;}
 .ft:after { content:""; display: block; height:1px; clear:both; }
@@ -57,4 +67,5 @@ header.active { position:fixed; top: 0; left: 0; z-index:9999; }
 .ft .tell_box span { font-size: 30px; font-weight: 700;}
 
 .ft .ft_logo { clear:both;  position:absolute; right: 21%; top: 40px; }
+
 

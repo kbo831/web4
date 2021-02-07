@@ -3,4 +3,12 @@
 .frm_fr { width:1440px; margin: 30px auto; height: auto; }
 .frm_fr .frm_tit{ width: 650px; margin: 0 auto; padding-left:36px; }
 .frm_box .frm1 { width: 650px; margin: 0 auto; margin-top: 40px}
-.frm_box .in_data { display: block; width:600px; height:30px; font-size: 15px; margin: 10px auto; padding: 5px; padding-right: 0px; border:1px solid #ddd; }
+.frm_box .in_data { display: block; width:600px; height:30px; font-size: 15px; margin: 0 auto; padding: 10px; padding-right: 0px; border:1px solid #ddd; border-top:0;}
+
+.in_data:disabled {color: darkgreen; font-weight: 700;}
+
+fieldset { margin: 20px; border:0; width: 612px; } 
+fieldset .in_btn { display:block; width: 100px; height: 50px; line-height: 30px;  font-size:15px; color: #000; border:1px solid #aaa; box-sizing: border-box; background-color:green; color: #fff; margin-top: 10px; cursor: pointer;}
+
+fieldset .left_btn {float:left;  }
+fieldset .left_btn {float:right; }

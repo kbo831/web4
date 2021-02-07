@@ -1,15 +1,6 @@
 @charset "UTF-8";
 
 .con { width: 100%; }
-.bread_box { width: 1440px; margin:0 auto; height: 200px; position:relative; }
-.bread_lst { width:20%;  height:30px; box-sizing: border-box; clear:both; float:right; position: absolute; right: -60px; bottom: 9px;}
-.bread_lst li { height: 30px; line-height: 30px; float:left; font-size: 15px; }
-
-.bread_lst li span { width:130px; height:30px; line-height: 30px; text-align: center; display: block;  color: black;  }
-.bread_lst li a {width:80px; height:30px; line-height: 30px; text-align: center; display: block;  color: black; border-bottom: 1px solid transparent; }
-.bread_lst li a:hover { color: green; border-bottom: 1px solid green;}
-.bread_lst li span:before { content:"<"; padding-right: 20px; }
-
 
 .pro_lst { clear:both; width:1440px; height:1800px; margin: 0 auto; overflow: hidden;}
 /*overflow: hidden 을 안해주면 안의 내용물이 영역을 넘어감 그래서 높이나 위치가 달라질 수 있음. 가장큰 부분부터 크기를 명확히 줘야함.*/

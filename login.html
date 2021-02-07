@@ -31,7 +31,7 @@
     </script>
     <link rel="stylesheet" href="css/clear.css">
     <link rel="stylesheet" href="./sub_common.css">
-    <link rel="stylesheet" href="./sub05.css">
+    <link rel="stylesheet" href="./login.css">
    
     <script>
     $(document).ready(function(){
@@ -88,7 +88,7 @@
                             <a href="sub04.html">브랜드 스토리</a>
                         </li>
                         <li class="active">
-                            <a href="sub05.html">질문게시판</a>
+                            <a href="sub05.html">시드물통신</a>
                         </li>
                     </ul>
                 </nav>
@@ -104,118 +104,34 @@
                         <a href="index.html">HOME</a>
                     </li>
                     <li>
-                        <span>시드물통신</span>
+                        <span>로그인</span>
                     </li>
                 </ul>
             </div>
-
-            <div class="qna clrfx">
-                <form action class="search_frm">
-                    <section class="qna_tit_box clrfx">
-
-                        <h3 class="cate_tit">질문게시판
-                        </h3>
-
-                        <ul class="qna_search">
-                            <li class="search_item">
-                                <input type="radio" name="search_ra" class="search_ra" id="search_ra1" checked>
-                                <label for="search_ra1">제목</label>
-                                <input type="radio" name="search_ra" class="search_ra" id="search_ra2">
-                                <label for="search_ra1">내용</label>
-                                <input type="radio" name="search_ra" class="search_ra" id="search_ra3">
-                                <label for="search_ra1">이름</label>
-                            </li>
-                            <li class="search_item">
-                                <input type="text" id="keyword" class="in_data" placeholder="  검색어 입력하세요.">
-                                <input type="submit" class="in_btn" value="검색">
-                            </li>
-                        </ul>
-                    </section>
-                    <div class="tb_box clrfx">
-                        <table class="tb clrfx">
-                            <thead>
-                                <tr>
-                                    <th class="tc1">NO.</th>
-                                    <th class="tc2">CONTENT</th>
-                                    <th class="tc3">NAME</th>
-                                    <th class="tc4">DATE</th>
-                                    <th class="tc5">HITS</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="tc1">[공지]</td>
-                                    <td class="tc2">
-                                        <div class="tc2_div">
-                                            <a href="">시드물 자연사랑 캠페인,공병반환시 적립금 지급</a>
-                                            <span class="qna_type1">pic.새싹</span>
-                                        </div>
-                                    </td>
-                                    <td class="tc3">시드물</td>
-                                    <td class="tc4">2020.09.23</td>
-                                    <td class="tc5">2203</td>
-                                </tr>
-                                <tr>
-                                    <td class="tc1">[공지]</td>
-                                    <td class="tc2">
-                                        <div class="tc2_div">
-                                            <a href="">시드물 합리적인 가격의 천연화장품 만들기</a>
-                                            <span class="qna_type1">pic.새싹</span>
-                                        </div>
-                                    </td>
-                                    <td class="tc3">시드물</td>
-                                    <td class="tc4">2009.01.26</td>
-                                    <td class="tc5">6716</td>
-                                </tr>
-                                <tr>
-                                    <td class="tc1">1</td>
-                                    <td class="tc2">
-                                        <div class="tc2_div">
-                                            <span class="qna_type2">pic.secret</span>
-                                            <a href="">제품문의합니다</a>
-                                        </div>
-                                    </td>
-                                    <td class="tc3">김태은</td>
-                                    <td class="tc4">2020.03.23</td>
-                                    <td class="tc5">2203</td>
-                                </tr>
-                                <tr>
-                                    <td class="tc1">2</td>
-                                    <td class="tc2">
-                                        <div class="tc2_div">
-                                            <span class="qna_type2">pic</span>
-                                            <a href="">배송문의합니다.</a>
-                                        </div>
-                                    </td>
-                                    <td class="tc3">김유나</td>
-                                    <td class="tc4">2020.02.23</td>
-                                    <td class="tc5">1203</td>
-                                </tr>
-                                <tr>
-                                    <td class="tc1">3</td>
-                                    <td class="tc2">
-                                        <div class="tc2_div">
-                                            <span class="qna_type2">pic</span>
-                                            <a href="">사은품문의합니다.</a>
-                                        </div>
-                                    </td>
-                                    <td class="tc3">서수진</td>
-                                    <td class="tc4">2020.01.23</td>
-                                    <td class="tc5">2003</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="page_num">
-                            <a href="" class="
-page_num_lst">1</a>
-                            <a href="" class="
-page_num_lst">2</a>
-                            <a href="" class="
-page_num_lst">3</a>
-                        </div>
-                        <a href="" class="wbtn">글쓰기</a>
+            <div class="frm_fr clrfx">
+                <section class="frm_box">
+                    <h3 class="frm_tit">회원 로그인</h3>
+                    <form action id="login_form" name="login_form"  class="frm1">
+                        <p>가입하신 아이디와 비밀번호를 입력해주세요<br>비밀번호는 대소문자를 구분합니다.</p>
+                        <input type="text" id="m_id"  class="in_data" placeholder="MEMBER ID" autofocus required>
+                        <input type="password" id="m_pw"  class="in_data" placeholder="PASSWORD" required>
+                        <input type="submit" value="로그인" class="in_btn">
+                        <fieldset>
+                            <input type="checkbox" class="ck_item" id="sec_ra">
+                            <label for="sec_ra">보안접속</label>
+                        </fieldset>
+                     </form>
+                </section>
+                <section class="join_box">
+                    <div class="join_box_div">
+                        <h3 class="frm_tit">회원가입</h3>
+                        <p class="frm_com">아직 회원이 아니신가요?<br>회원가입을 하시면 다양한 혜택을 편리하게 이용하실 수 있습니다.</p>
+                        <a href="" class="wbtn">JOIN US</a>
+                        <p class="frm_com">아이디 혹은 비밀번호를 잊으셨나요?<br>간단한 정보를 입력 후 잃어버린 정보를 찾으실 수 있습니다.</p>
+                        <a href="" class="wbtn">ID/PASSWORD</a>
                     </div>
-                </form>
+                </section>
+              
             </div>
         </main>
         <footer class="ft clrfx">
@@ -258,7 +174,6 @@ page_num_lst">3</a>
                     <img src="./main/seedmol_tnb_end_logo.png" alt="tnb_로고">
                 </div>
             </div>
-        
         </footer>
     </div>
 

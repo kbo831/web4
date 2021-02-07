@@ -2,12 +2,6 @@
 
 .con { width: 100%; }
 
-.bread_lst {float: right;}
-.bread_lst li { float: left; padding:20px 5px; font-size: 20px; }
-.bread_lst li + li:before { content:"<"; display: block; float: left; padding-right: 10px;}
-.bread_lst li a { color: black; border-bottom: 1px solid transparent; }
-.bread_lst li a:hover { color: green; border-bottom: 1px solid green;}
-
 .pro_lst { width: 1440px; margin: 0 auto; overflow: hidden;}
 /*overflow: hidden 을 안해주면 안의 내용물이 영역을 넘어감 그래서 높이나 위치가 달라질 수 있음.*/
 .pro_btn_box {float:right; clear:both;}

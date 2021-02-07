@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/clear.css">
     <!--공통, 메인 css링크-->
     <link rel="stylesheet" href="./sub_common.css">
-    <link rel="stylesheet" href="join.css">
+    <link rel="stylesheet" href="mypage.css">
     <!--ㅈㅔ이쿼리 js 넣기-->
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <!--모바일에서 데탑전환 또는 반대 스크립트-->
@@ -127,16 +127,19 @@
             </div>
             <div class="frm_fr clrfx">
                <h3 class="frm_tit">My page</h3>
-                <section class="frm_box">
+                <section class="frm_box clrfx">
                     
                     <form action="login_form" name="login_form" class="frm1">
-                        <input type="text" id="m_name" class="in_data" placeholder="이름" autofocus required>
-                        <input type="text" name="m_id" class="in_data" placeholder="아이디" required>
-                        <input type="password" id="m_pw" class="in_data" placeholder="비밀번호" required>
-                        <input type="password" id="m_pw2" class="in_data" placeholder="비밀번호 확인" required>
-                        <input type="email" id="email" class="in_data" placeholder="이메일" required>
-                        <input type="tel" id="tel" class="in_data" placeholder="휴대폰번호">
-
+                        <input type="text" id="m_name" class="in_data" value="김태은" disabled style="border-top:1px solid #ddd">
+                        <input type="text" name="m_id" class="in_data" value="taeeunkim1234" disabled>
+                        <input type="password" id="m_pw" class="in_data" value="김태은1234567890" placeholder="비밀번호" required>
+                        <input type="password" id="m_pw2" class="in_data" value="김태은1234567890" placeholder="비밀번호확인" required>
+                        <input type="email" id="email" class="in_data" value="kim1234@naver.com" required>
+                        <input type="tel" id="tel" class="in_data" value="01011332244" required>
+                        <fieldset clrfx>
+                            <input type="submit" value="정보변경" class="in_btn left_btn">
+                            <input type="reset" value="취소" class="in_btn right_btn">
+                        </fieldset>
                     </form>
                 </section>       
             </div>
