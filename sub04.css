@@ -1,5 +1,8 @@
 @charset "UTF-8";
 .con { width: 100%;}
+#page4 { margin-top : 100px;}
+.full_intro img { display: block; width:100%; height: 845px; }
+
 .frm_box { width:100%; clear:both;  height: 400px; margin-left: 30px; position:relative;}
 .frm_box section { width:1440px;  margin: 30px auto; color: #ddd;font-size: 35px; text-shadow: 1px 1px 1px #03731f; position: relative;}
 .frm_box section span { color:green; font-size: 50px;}
