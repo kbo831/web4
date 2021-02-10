@@ -2,9 +2,45 @@
 
 .con { width: 100%; }
 
+/*bread_box*/
+       .bread_box {
+           width: 100%;
+           margin: 0 auto;
+           height: 50px;
+           overflow: hidden;
+           line-height: 70px;
+           border-bottom: 1px dashed #ddd;
+           border-top: 1px dashed #ddd;
+           margin-top: 125px
+       }
 
+       .bread_box section {
+           width: 1440px;
+           height: 30px;
+           margin: 0 auto;
+       }
+
+       .bread_box section h3 {
+           display: none;
+       }
+
+       .bread_lst {
+           float: right;
+           height: 30px;
+           box-sizing: border-box;
+           padding-top: 10px;
+           padding-right: 60px;
+       }
+
+       .bread_lst li {
+           height: 30px;
+           line-height: 30px;
+           float: left;
+           font-size: 15px;
+       }
+  
 /*회원로그인*/
-.frm_fr { width: 1440px; height:500px; margin: 0 auto; border:1px solid #aaa;}
+.frm_fr { width: 1440px; height:500px; margin: 110px auto; border:1px solid #aaa; }
 section.frm_box { width: 50%; height: 500px; float: left; margin: 10px 0; }
 .frm_tit { width: 100%; height: 50px; padding:40px 0; padding-left: 90px; padding-bottom: 20px;}
 section.frm_box .frm1 { padding-left: 90px; border-right: 1px solid #aaa; width: 80%; height: 300px;}
