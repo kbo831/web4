@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>시드물리뉴얼 포트폴리오</title>
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="" >
+    <link rel="apple-touch-icon-precomposed" href="애플이미지미정" />
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./data/icon/shortcut_img/favicon(20x20).ico" type="image/x-icon">
+
+    <meta name="title" content="시드물리뉴얼 포트폴리오">
+    <meta name="keywords" content="시드물, 자연뷰티, 천연성분화장품, 천연식물성분, 천연보존시스템, 동물실험반대, 아름다운가게, 자연사랑, 자연보호 ">
+    <meta name="description" content="자연은 사람보호, 사람은 자연보호, 천연성분을 사용하는 자연뷰티 브랜드 시드물 홈페이지입니다.">
+    <meta http-equiv="refresh" content="180">
+    <meta property="og:title" content="자연뷰티브랜드 시드물">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="자연은 사람보호, 사람은 자연보호, 천연성분을 사용하는 자연뷰티 브랜드 시드물 홈페이지입니다.">
+    <!--오픈 그래프 이지미 넣기-->
+    <meta property="og:image" content="jpg">
+    <meta property="og:url" content="www.sidmool.com">
+    <meta property="og:site_name" content="자연뷰티화장품 시드물">
+    
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!--모바일에서 데탑전환 또는 반대 스크립트-->
+    <script src="./js/device.js"></script>
+    <script>
+      
+    </script>
+    <link rel="stylesheet" href="css/clear.css">
+    <link rel="stylesheet" href="./sub_common.css">
+    <link rel="stylesheet" href="./cart.css">
+   <style>
+       /*bread_box*/
+       .bread_box {
+           width: 100%;
+           margin: 0 auto;
+           height: 50px;
+           overflow: hidden;
+           line-height: 70px;
+           border-bottom: 1px dashed #ddd;
+           border-top: 1px dashed #ddd;
+           margin-top: 10px
+       }
+
+       .bread_box section {
+           width: 1440px;
+           height: 30px;
+           margin: 0 auto;
+       }
+
+       .bread_box section h3 {
+           display: none;
+       }
+
+       .bread_lst {
+           float: right;
+           height: 30px;
+           box-sizing: border-box;
+           padding-top: 10px;
+           padding-right: 60px;
+       }
+
+       .bread_lst li {
+           height: 30px;
+           line-height: 30px;
+           float: left;
+           font-size: 15px;
+       }
+   </style>
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var pageTop = $(window).scrollTop();
+            if(pageTop>=350) {
+                $(".header").addClass("active");
+            } else {
+                $(".header").removeClass("active");
+            }
+        });
+    });    
+    </script>
+   
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd_wrap clrfx">
+            <nav class="tnb clrfx">
+                <ul class="clrfx">
+                    <li>
+                        <a href="join.html">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="login.html">로그인</a>
+                    </li>
+                    <li>
+                        <a href="mypage.html">마이페이지</a>
+                    </li>
+                    <li>
+                        <a href="">장바구니<span class="buy_num">(0)</span>
+                        </a>
+                    </li>
+                    <li><a href="">배송조회</a></li>
+                </ul>
+            </nav>
+            <div class="gnb_wrap clrfx">
+                <a href="index.html" class="logo">
+                    <img src="./main/seedmol_tnb_logo(230_70).png" alt="시드물_로고">
+                </a>
+                <nav class="gnb clrfx">
+                    <ul class="gnb_lst">
+                        <li>
+                            <a href="sub01.html">홍보영상</a>
+                        </li>
+                        <li>
+                            <a href="sub02.html">제품구매</a>
+                        </li>
+                        <li>
+                            <a href="sub03.html">브랜드 PHILOSOPHY</a>
+                        </li>
+                        <li >
+                            <a href="sub04.html">브랜드 스토리</a>
+                        </li>
+                        <li>
+                            <a href="sub05.html">질문게시판</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="index.html" class="logo_ico">
+                    <img src="./main/tnb_end_img.png" alt="시드물_아이콘">
+                </a>
+            </div>
+        </header>
+        <main class="con clrfx">
+            <div class="bread_box clrfx">
+                <section>
+                    <h3>브래드 크럼브</h3>
+                    <ul class="bread_lst clrfx ">
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <span>장바구니</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="cart_box clrfx">
+                <section>
+                    <h3 class="cart_tit">장바구니</h3>
+                    <div class="table_box">
+                        <table class="tb">
+                            <thead>
+                                <tr>
+                                    <th class="tc01">번호</th>
+                                    <th class="tc01">사진</th>
+                                    <th class="tc02">상품명</th>
+                                    <th class="tc01">수량</th>
+                                    <th class="tc01">적립</th>
+                                    <th class="tc01">금액</th>
+                                    <th class="tc01">배송비</th>
+                                    <th class="tc01">취소</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td colspan="8" >장바구니에 담긴 상품이 없습니다.</td>
+                                    <td class="txt01">2</td>
+                                    <td class="txt01">3</td>
+                                    <td class="txt01">4</td>
+                                    <td class="txt01">5</td>
+                                    <td class="txt01">6</td>
+                                    <td class="txt01">7</td>
+                                    <td class="txt01">8</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                            <ul class="button_box clrfx">
+                               <li class="active">
+                                   <a href="" >주문하기</a>
+                               </li>
+                               <li>
+                                   <a href="">계속 쇼핑하기</a>
+                               </li>
+                               <li>
+                                   <a href="">장바구니 비우기</a>
+                               </li>
+                               <li>
+                                   <a href="">견적서 출력</a>
+                               </li>
+                            </ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="ft clrfx">
+            <div class="ft_wrap">
+                <div class="text_wrap">
+                    <ul class="text_box01 text_box">
+                        <li>
+                            <a href="">회사소개</a>
+                        </li>
+                        <li>
+                            <a href="">이용안내</a>
+                        </li>
+                        <li>
+                            <a href="">개인정보처리방침
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">이용약관</a>
+                        </li>
+                    </ul>
+                    <div class="text_box02 ">
+                        <p>회사명: 주식회사 시드물</p>
+                        <p>본사:대전광역시 중구 안영로 42(안영동) 우편번호)35083</p>
+                        <p>대표: 민중기 사업자등록번호:305-81-94469</p>
+                        <p>화장품 제조판매업 등록필증 제 1163호</p>
+                        <p class="copyright">
+                        COPYRIGHT(C) 2008<span>SIDMOOL</span>ALL RIGHTS RESERVED.
+                        <span>Hosting by Makeshop</span>
+                    </p>
+                    </div>
+                </div>
+                <div class="tell_box">
+                    <p><span class="01">상담문의</span></p>
+                    <p ><span>Tell: 1577-9638</span></p>
+                    <p>해외: +82-42-716-0227</p>
+                    <p>팩스:042-367-7989</p>
+
+                </div>
+                <div class="ft_logo text_box">
+                    <img src="./main/seedmol_tnb_end_logo.png" alt="tnb_로고">
+                </div>
+            </div>
+        
+        </footer>
+    </div>
+
+</body>
+
+</html>

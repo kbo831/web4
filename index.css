@@ -40,6 +40,21 @@ input,button,img { outline: 0; border: 0; background: none; }
 
 /*content*/
 .con { width: 100%;  }
+figure .bxslider li { position:relative; }
+.bxslider .tit_box01,.bxslider .tit_box02,.bxslider .tit_box03 { position:absolute; }
+/*color*/
+.bxslider .d_green { color:#4a8f00; font-size:50px; } 
+.bxslider .l_green { color:#80ca00; font-size: 70px; }
+.bxslider .brown { color:#a38165; font-size: 40px; padding-bottom: 10px; }
+.bxslider .sky { color:#44d1da; font-size: 45px; text-align: center; padding-top: 15px;} 
+
+.bxslider .tit_box01 { left:53%; top:35%; }
+.bxslider .tit_box01 .age { right: 10%; bottom: 5%; font-size: 15px; padding-top: 100px; font-weight: 600; text-align: right; }
+.bxslider .tit_box02  { left:18%; top:30%; }
+.bxslider .tit_box02 .d_green { font-size: 70px; padding-bottom: 20px; }
+.bxslider .tit_box02 .com { font-size: 30px; line-height: 2.0; text-align: center; padding-bottom: 18px;  }
+.bxslider .tit_box03 { left:58%; top:35%; }
+
 
 /*page01*/
 .page { width: 100vw; margin: 0 auto; clear:both; position: relative;  overflow: hidden; min-height: 600px;}
@@ -64,9 +79,9 @@ input,button,img { outline: 0; border: 0; background: none; }
 /*button*/
 #page01 .fr_box label { display: block; width: 100px; height: 100px; position: absolute; top:40%; text-indent: -9999px; }
 /*호버시 각도도절 효과 넣기:transition 과 trasform: rotate("xxdge"); position: absolute 가 있어야 조절 가능 */
-#page01 .fr_box label.prev { left:0; background-image: url("main/leaf_left_btn.png"); }
+#page01 .fr_box label.prev { left:0; background-image: url("main/leaf_left_btn.png"); cursor: pointer;}
 
-#page01 .fr_box label.next { right:0; background-image: url("main/leaf_right_btn.png"); }
+#page01 .fr_box label.next { right:0; background-image: url("main/leaf_right_btn.png"); cursor: pointer; }
 
 #page01 .radio { display: none;}
 
@@ -77,6 +92,8 @@ input,button,img { outline: 0; border: 0; background: none; }
 #page01 .box02 .tit03 { font-size: 45px;}
 #page01 .box02 a { display: block; width: 120px; height:80px; font-size: 30px; line-height:80px; position: absolute; left:21%; bottom: 27%; border: 1px solid transparent; border-radius: 40px; color:#fff; font-weight: 700;background-color: #633702; }
 #page01 .box02 a:hover { border: 2px solid #633702; background-color: white; color: #633702; } 
+
+
 
 /*box3*/
 #page01 p {font-weight: 700;}

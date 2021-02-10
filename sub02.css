@@ -2,21 +2,60 @@
 
 .con { width: 100%; }
 
-.pro_lst { clear:both; width:1440px; height:1800px; margin: 0 auto; overflow: hidden;}
+       /*bread_box*/
+       .bread_box {
+           width: 100%;
+           margin: 0 auto;
+           height: 50px;
+           overflow: hidden;
+           line-height: 70px;
+           border-bottom: 1px dashed #ddd;
+           border-top: 1px dashed #ddd;
+           margin-top: 125px;
+       }
+
+       .bread_box section {
+           width: 1440px;
+           height: 30px;
+           margin: 0 auto;
+       }
+
+       .bread_box section h3 {
+           display: none;
+       }
+
+       .bread_lst {
+           float: right;
+           height: 30px;
+           box-sizing: border-box;
+           padding-top: 10px;
+           padding-right: 20px;
+       }
+
+       .bread_lst li {
+           height: 30px;
+           line-height: 30px;
+           float: left;
+           font-size: 15px;
+       }
+
+
+.pro_lst { clear:both; width:1440px; height:2100px; margin: 0 auto; overflow: hidden;}
 /*overflow: hidden 을 안해주면 안의 내용물이 영역을 넘어감 그래서 높이나 위치가 달라질 수 있음. 가장큰 부분부터 크기를 명확히 줘야함.*/
 
-.pro_btn_box { float:right; clear:both; overflow: hidden;}
+.pro_btn_box { float:right; clear:both; margin-top: 20px;}
 .pro_lst  .pro_btn_box li {float: left;  }
 .pro_lst  .pro_btn_box li button { font-size: 20px; cursor:pointer; }
 .pro_lst  .pro_btn_box li button:after { content:"|"; display: block; float:right; padding:0 20px; }
 .pro_lst  .pro_btn_box li button:hover { color: green;}
 
 /*product_lst: 리스트 안의 div 박스를 움직여야 함.. 리스트는 고정이다 이 친구야 정신차려; 첫번째 리스트가 위로 올라가는 현상은 플로우 때문 */
-.pro_lst_data { width:1440px; height:auto; box-sizing: border-box; clear:both;}
-.pro_lst_data li { width:33.333%; height: 400px; float:left; padding-top: 35px;  }
-.pro_lst_data .pro_box { width:100%; height: 400px; margin-top: 20px; transition: 0.3s; }
+.pro_lst_data { width:1440px; height:2500px; box-sizing: border-box; clear:both;}
+.pro_lst_data li { width:33.333%; height: 500px; float:left;  }
+.pro_lst_data .pro_box { width:100%; margin-top: 20px; transition: 0.3s; }
+pro_lst_data .pro_box img { width:390px; height:285px;  display:block; margin: 0 auto;}
 .pro_lst_data .pro_box:hover { margin-top: 0;}
-.pro_lst_data .pro_box a.thum_box { clear:both; display: block; color: black; font-weight: 700; width:400px; margin: 0 auto; }
+.pro_lst_data .pro_box a.thum_box { clear:both; display: block; color: black; font-weight: 700; width:390px; margin: 0 auto; }
 .pro_lst_data a.thum_box h4 { text-align: center;}
 .data-type-box { width:200px;  height: 30px; margin: 0 auto; text-align: center; line-height: 30px; }
 .pro_lst_data p { text-align:  center;}

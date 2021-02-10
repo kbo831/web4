@@ -32,6 +32,44 @@
     <link rel="stylesheet" href="css/clear.css">
     <link rel="stylesheet" href="./sub_common.css">
     <link rel="stylesheet" href="./sub05.css">
+   <style>
+     /*bread_box*/
+       .bread_box {
+           width: 100%;
+           margin: 0 auto;
+           height: 50px;
+           overflow: hidden;
+           line-height: 70px;
+           border-bottom: 1px dashed #ddd;
+           border-top: 1px dashed #ddd;
+           margin-top: 125px;
+       }
+
+       .bread_box section {
+           width: 1440px;
+           height: 30px;
+           margin: 0 auto;
+       }
+
+       .bread_box section h3 {
+           display: none;
+       }
+
+       .bread_lst {
+           float: right;
+           height: 30px;
+           box-sizing: border-box;
+           padding-top: 10px;
+           padding-right: 40px;
+       }
+
+       .bread_lst li {
+           height: 30px;
+           line-height: 30px;
+           float: left;
+           font-size: 15px;
+       }
+   </style>
    
     <script>
     $(document).ready(function(){
@@ -50,7 +88,7 @@
 
 <body>
     <div class="wrap">
-        <header class="hd_wrap active">
+        <header class="hd_wrap active clrfx">
             <nav class="tnb clrfx">
                 <ul class="clrfx">
                     <li>
@@ -63,7 +101,7 @@
                         <a href="mypage.html">마이페이지</a>
                     </li>
                     <li>
-                        <a href="">장바구니<span class="buy_num">(0)</span>
+                        <a href="cart.html">장바구니<span class="buy_num">(0)</span>
                         </a>
                     </li>
                     <li><a href="">배송조회</a></li>
@@ -99,19 +137,22 @@
         </header>
         <main class="con clrfx">
             <div class="bread_box clrfx">
-                <ul class="bread_lst clrfx ">
-                    <li>
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li>
-                        <span>시드물통신</span>
-                    </li>
-                </ul>
+                <section>
+                    <h3>브래드 크럼브</h3>
+                    <ul class="bread_lst clrfx ">
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <span>질문게시판</span>
+                        </li>
+                    </ul>
+                </section>
             </div>
 
             <div class="qna clrfx">
-                <form action class="search_frm">
-                    <section class="qna_tit_box clrfx">
+                <form action class="search_frm clrfx ">
+                    <section class="qna_tit_box ">
 
                         <h3 class="cate_tit">질문게시판
                         </h3>
