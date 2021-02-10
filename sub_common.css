@@ -45,6 +45,33 @@ header.active { position:fixed; top: 0; left: 0; z-index:9999; }
 .bread_lst li a:hover { color: green; border-bottom: 1px solid green;}
 .bread_lst li span:before { content:"<"; padding-right: 20px; }
 
+/*layer popup*/
+#pop01 { width:100vw; height: 100vw;  background-color: rgba(0,0,0,0.5); position: fixed; top:0; left: 0; z-index: 9999px; display:none;  }
+#pop01 .pop_box { width:1000px; height:600px; margin: 0 auto;  border: 1px solid #fff;  position: absolute; top:8%; left: 25%; background-color: #fff;}
+
+#pop01 .pop_box h4 { margin-bottom: 10px; padding: 15px 0 ; border-bottom: 1px solid #eee; color:rgb(0,128,0); height:30px; line-height: 30px; font-size: 20px; width: 500px; margin: 20px auto; text-align: center; }
+ 
+#pop01 span.ico { display: block; background-image: url(main/gnb_a_bg.png); width: 20px; height: 17px; background-repeat: no-repeat;  text-indent: -999px; margin: 5px 0px; margin-left: 20px; float: left; }
+
+#pop01 .pop_box textarea { width: 900px; height:400px; margin:20px 50px; overflow:scroll; word-break: break-all; white-space: pre; word-wrap: break-word; border:1px solid #eee; }
+#pop01 .pop_box .close_btn {display: block; float:right; margin:0px 20px ; width:100px; height: 30px;  background-color: green; color: #fff; font-size: 18px; text-align: center; line-height: 30px;}
+
+#pop01:target{display: block;}
+
+
+/*popup2*/
+#pop02 { width:100vw; height: 100vw;  background-color: rgba(0,0,0,0.5); position: fixed; top:0; left: 0; z-index: 9999px; display:none;  }
+#pop02 .pop_box { width:1000px; height:600px; margin: 0 auto;  border: 1px solid #fff;  position: absolute; top:8%; left: 25%; background-color: #fff;}
+
+#pop02 .pop_box h4 { margin-bottom: 10px; padding: 15px 0 ; border-bottom: 1px solid #eee; color:rgb(0,128,0); height:30px; line-height: 30px; font-size: 20px; width: 500px; margin: 20px auto; text-align: center; }
+ 
+#pop02 span.ico { display: block; background-image: url(main/gnb_a_bg.png); width: 20px; height: 17px; background-repeat: no-repeat;  text-indent: -999px; margin: 5px 0px; margin-left: 20px; float: left; }
+
+#pop02 .pop_box textarea { width: 900px; height:400px; margin:20px 50px; overflow:scroll; word-break: break-all; white-space: pre; word-wrap: break-word; border:1px solid #eee; }
+#pop02 .pop_box .close_btn {display: block; float:right; margin:0px 20px ; width:100px; height: 30px;  background-color: green; color: #fff; font-size: 18px; text-align: center; line-height: 30px;}
+
+#pop02:target{display: block;}
+
 /*ft: 가운데 정렬 안 될때 중간에 clrfx 설정해서 넣어주기 [.page 뒤에 .page:after 작용]*/
 .ft { width: 100vw; height:auto; position: relative; overflow: hidden; padding: 30px 0;}
 .ft:after { content:""; display: block; height:1px; clear:both; }
@@ -55,9 +82,9 @@ header.active { position:fixed; top: 0; left: 0; z-index:9999; }
 .ft .text_box01 li a { display: block; color: black; padding-right: 20px; padding-bottom: 10px;}
 .ft .text_box01 li a:after {content:"|"; text-align: right; padding-left: 20px;}
 .ft .text_box01 li:hover a {color: green;}
-.ft .text_box02 { clear:both; font-size: 14px; color:#ccc; }
+.ft .text_box02 { clear:both; font-size: 14px; color:#aaa; }
 .ft .text_box02 p {padding:5px 0}
-.ft .copyright {  font-size: 14px; color:#ccc;  }
+.ft .copyright {  font-size: 14px; color:#aaa;  }
 
 .ft .tell_box { float: left; width: 20%; font-size:15px; text-align: center; padding-left: 20px; margin-top: -5px;}
 .ft .tell_box p { padding: 5px 0; font-weight: 600;}
@@ -65,4 +92,4 @@ header.active { position:fixed; top: 0; left: 0; z-index:9999; }
 
 .ft .ft_logo { clear:both;  position:absolute; right: 21%; top: 40px; }
 
-/*팝업*/
+
